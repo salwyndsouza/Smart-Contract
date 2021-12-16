@@ -46,8 +46,8 @@ nonce = W3.eth.getTransactionCount(address1)
 # Submit the transaction that deploys the contract
 tx_dict = Greeter.constructor().buildTransaction({
 'chainId': 3,
-'gas': 1700000,
-'gasPrice': w3.toWei('60', 'gwei'),
+'gas': 1400000,
+'gasPrice': w3.toWei('40', 'gwei'),
 'nonce': nonce,
 'from':address1
 })
